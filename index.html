@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Undangan Pernikahan – Muhammad Caessar Adhari & Tri Novitasari</title>
+<meta property="og:title" content="Undangan Pernikahan – Muhammad Caessar Adhari & Tri Novitasari"/>
+<meta property="og:description" content="Minggu, 5 Juli 2026 – Masjid Agung An-Nuur, Kota Mungkid, Magelang"/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Nunito:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --green-deep:#2d5016;
+  --green-mid:#4a7a2e;
+  --green-soft:#6a9b4a;
+  --green-pale:#e8f5e0;
+  --green-bg:#f0f7ec;
+  --gold:#9e7e2e;
+  --gold-dark:#7a6220;
+  --gold-light:#c4a84e;
+  --gold-muted:#b09848;
+  --cream:#fdfcf8;
+  --cream-mid:#f5f0e0;
+  --text-dark:#2a2a1e;
+  --text-mid:#4a4a38;
+  --text-light:#6a6a58;
+  --border:#d4cfb8;
+}
+body{font-family:'Nunito',sans-serif;background:var(--green-bg);min-height:100vh;color:var(--text-dark);}
+
+/* ══════ INVITATION VIEW ══════ */
+.inv-wrap{display:flex;justify-content:center;padding:0;min-height:100vh;background:linear-gradient(135deg,#e8f0e2 0%,#f4f8f0 40%,#fdfcf8 100%);}
+.inv-card{background:var(--cream);max-width:720px;width:100%;min-height:100vh;position:relative;overflow:hidden;}
+.inv-card::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;
+  background:
+    radial-gradient(ellipse at 0% 100%, rgba(106,155,74,0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 100% 0%, rgba(106,155,74,0.08) 0%, transparent 40%),
+    radial-gradient(ellipse at 100% 100%, rgba(106,155,74,0.10) 0%, transparent 45%);
+  pointer-events:none;z-index:0;}
+.inv-content{position:relative;z-index:1;padding:3rem 2.5rem 2.5rem;text-align:center;}
+
+.assalam{font-family:'Nunito',sans-serif;font-size:15px;font-weight:600;color:var(--green-deep);letter-spacing:.08em;margin-bottom:1.2rem;}
+.opening-verse{font-family:'Cormorant Garamond',serif;font-size:16px;font-style:italic;color:var(--text-mid);line-height:1.8;margin-bottom:2.2rem;}
+
+.kepada-section{margin-bottom:2rem;}
+.kepada-lbl{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-muted);margin-bottom:.35rem;}
+.inv-guest-name{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:500;color:var(--green-deep);margin-bottom:.5rem;line-height:1.25;}
+.bridge-text{font-family:'Cormorant Garamond',serif;font-size:14px;font-style:italic;color:var(--gold-muted);letter-spacing:.03em;}
+
+.divider-gold{display:flex;align-items:center;gap:12px;justify-content:center;margin:1.5rem 0;}
+.divider-gold-line{width:70px;height:1px;background:linear-gradient(90deg,transparent,var(--gold-light),transparent);}
+.divider-gold-dot{width:6px;height:6px;background:var(--gold);border-radius:50%;opacity:.7;}
+
+.groom-name{font-family:'Great Vibes',cursive;font-size:42px;color:var(--gold-dark);line-height:1.1;margin-bottom:.25rem;}
+.groom-parents{font-size:12px;color:var(--text-light);margin-bottom:1rem;line-height:1.5;}
+.couple-and{font-family:'Great Vibes',cursive;font-size:32px;color:var(--gold);margin:.4rem 0;}
+.bride-name{font-family:'Great Vibes',cursive;font-size:42px;color:var(--gold-dark);line-height:1.1;margin-bottom:.25rem;}
+.bride-parents{font-size:12px;color:var(--text-light);margin-bottom:1.5rem;line-height:1.5;}
+
+.event-label{font-size:12px;letter-spacing:.25em;text-transform:uppercase;color:var(--green-deep);font-weight:600;margin-bottom:.5rem;}
+.event-divider{width:120px;height:1px;background:var(--gold-light);margin:0 auto .8rem;}
+.event-date{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--green-deep);margin-bottom:.6rem;letter-spacing:.05em;}
+.event-date::before{content:'\2726 ';font-size:12px;color:var(--gold);}
+.event-date::after{content:' \2726';font-size:12px;color:var(--gold);}
+.event-time{display:inline-block;background:var(--green-deep);color:#fff;padding:6px 24px;border-radius:3px;font-size:14px;font-weight:600;letter-spacing:.1em;margin-bottom:.8rem;}
+.event-venue{font-size:14px;font-weight:600;color:var(--green-deep);line-height:1.5;text-transform:uppercase;letter-spacing:.06em;}
+.event-venue-sub{font-size:13px;color:var(--text-mid);margin-bottom:.3rem;}
+.maps-link{display:inline-flex;align-items:center;gap:5px;font-size:12px;color:var(--green-mid);text-decoration:none;border:.5px solid var(--green-soft);border-radius:20px;padding:5px 14px;margin-top:.4rem;transition:all .15s;}
+.maps-link:hover{background:var(--green-pale);border-color:var(--green-mid);}
+.event-divider-bottom{width:120px;height:1px;background:var(--gold-light);margin:1.2rem auto;}
+
+.quran-box{background:linear-gradient(135deg,rgba(232,245,224,0.5),rgba(253,252,248,0.8));border:0.5px solid rgba(106,155,74,0.25);border-radius:8px;padding:1.2rem 1.5rem;margin:1.5rem auto;max-width:420px;}
+.quran-text{font-family:'Cormorant Garamond',serif;font-size:13.5px;font-style:italic;color:var(--text-mid);line-height:1.85;}
+.quran-ref{font-size:11px;font-weight:600;color:var(--green-deep);margin-top:.6rem;letter-spacing:.08em;}
+
+.rsvp-section{margin-top:1.8rem;}
+.rsvp-lbl{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-muted);margin-bottom:.8rem;}
+.rsvp-btns{display:flex;gap:10px;justify-content:center;}
+.btn-hadir{background:var(--green-deep);color:#fff;border:none;border-radius:3px;padding:11px 30px;font-family:'Nunito',sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;cursor:pointer;transition:background .15s;}
+.btn-hadir:hover{background:var(--green-mid);}
+.btn-tidak{background:transparent;color:var(--green-deep);border:1px solid var(--green-soft);border-radius:3px;padding:11px 24px;font-family:'Nunito',sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;cursor:pointer;transition:all .15s;}
+.btn-tidak:hover{background:var(--green-pale);}
+.rsvp-done{display:none;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--green-deep);margin-top:1rem;line-height:1.7;}
+
+.closing{margin-top:2rem;font-size:13px;color:var(--text-mid);line-height:1.8;}
+.closing-salam{font-weight:600;color:var(--green-deep);margin-top:.5rem;font-size:14px;}
+
+.lily-top-right{position:absolute;top:-10px;right:-20px;width:220px;height:280px;opacity:.18;z-index:0;pointer-events:none;}
+.lily-bottom-left{position:absolute;bottom:-20px;left:-30px;width:250px;height:300px;opacity:.15;z-index:0;pointer-events:none;transform:rotate(180deg);}
+.leaf-accent-tl{position:absolute;top:40px;left:-10px;width:120px;height:180px;opacity:.10;z-index:0;pointer-events:none;}
+
+/* ══════ GENERATOR VIEW ══════ */
+.gen-wrap{max-width:620px;margin:0 auto;padding:2rem 1.5rem 4rem;}
+.gen-header{text-align:center;margin-bottom:2rem;}
+.gen-header h1{font-family:'Great Vibes',cursive;font-size:32px;color:var(--green-deep);margin-bottom:.3rem;}
+.gen-header p{font-size:13px;color:var(--text-light);}
+
+.gen-panel{background:var(--cream);border:.5px solid var(--border);border-radius:12px;padding:1.25rem 1.5rem;margin-bottom:1rem;}
+.gen-panel-title{font-size:13px;font-weight:600;color:var(--green-deep);margin-bottom:1rem;}
+.gen-base-row{margin-bottom:.8rem;}
+.gen-base-row label{display:block;font-size:11px;color:var(--text-light);letter-spacing:.06em;margin-bottom:.35rem;}
+.gen-base-row input{width:100%;font-family:'Nunito',sans-serif;font-size:14px;padding:9px 14px;background:var(--green-pale);border:.5px solid rgba(106,155,74,0.3);border-radius:8px;color:var(--text-dark);outline:none;}
+.gen-base-row input:focus{border-color:var(--green-mid);}
+.gen-hint{font-size:11px;color:var(--text-light);margin-top:.3rem;}
+
+.add-row{display:flex;gap:8px;margin-bottom:1rem;}
+.add-row input{flex:1;font-family:'Nunito',sans-serif;font-size:14px;padding:9px 14px;background:var(--green-pale);border:.5px solid rgba(106,155,74,0.3);border-radius:8px;color:var(--text-dark);outline:none;}
+.add-row input:focus{border-color:var(--green-mid);}
+.add-row input::placeholder{color:var(--green-soft);}
+.btn-primary{background:var(--green-deep);color:#fff;border:none;border-radius:8px;padding:9px 18px;font-family:'Nunito',sans-serif;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap;transition:background .15s;}
+.btn-primary:hover{background:var(--green-mid);}
+
+.link-list{display:flex;flex-direction:column;gap:6px;}
+.link-row{display:flex;align-items:center;gap:8px;padding:10px 12px;background:var(--green-pale);border:.5px solid rgba(106,155,74,0.2);border-radius:8px;}
+.link-num{font-size:11px;color:var(--text-light);min-width:20px;text-align:center;}
+.link-name{flex:1;font-size:14px;color:var(--text-dark);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.btn-copy{font-size:12px;padding:5px 14px;border:.5px solid var(--border);border-radius:7px;background:var(--cream);color:var(--text-mid);cursor:pointer;font-family:'Nunito',sans-serif;transition:all .15s;white-space:nowrap;}
+.btn-copy:hover{background:var(--green-pale);border-color:var(--green-soft);}
+.btn-copy.copied{background:var(--green-pale);color:var(--green-deep);border-color:var(--green-mid);}
+.btn-wa{font-size:12px;padding:5px 12px;border:.5px solid #25d366;border-radius:7px;background:transparent;color:#1da851;cursor:pointer;font-family:'Nunito',sans-serif;transition:all .15s;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center;gap:4px;}
+.btn-wa:hover{background:#ecfbf1;}
+.btn-del{background:none;border:none;cursor:pointer;color:var(--text-light);font-size:15px;padding:4px 6px;line-height:1;border-radius:6px;}
+.btn-del:hover{color:#b02020;}
+.empty-state{text-align:center;padding:2rem;color:var(--text-light);font-size:13px;}
+.gen-footer{text-align:center;margin-top:1.5rem;font-size:12px;color:var(--text-light);line-height:1.7;}
+
+.toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(20px);background:var(--green-deep);color:#fff;padding:10px 22px;border-radius:8px;font-size:13px;opacity:0;transition:all .3s;pointer-events:none;z-index:999;}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+
+@media(max-width:520px){
+  .inv-content{padding:2rem 1.4rem 2rem;}
+  .groom-name,.bride-name{font-size:32px;}
+  .couple-and{font-size:24px;}
+  .inv-guest-name{font-size:24px;}
+  .gen-wrap{padding:1.2rem 1rem 3rem;}
+  .link-row{flex-wrap:wrap;}
+  .link-name{flex-basis:calc(100% - 40px);}
+  .lily-top-right{width:160px;height:200px;}
+  .lily-bottom-left{width:180px;height:220px;}
+}
+</style>
+</head>
+<body>
+
+<!-- ══════ INVITATION VIEW ══════ -->
+<div id="view-invitation" style="display:none;">
+  <div class="inv-wrap">
+    <div class="inv-card">
+      <svg class="lily-top-right" viewBox="0 0 220 280" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="160" cy="60" rx="55" ry="18" fill="#6a9b4a" transform="rotate(-45 160 60)" opacity="0.6"/>
+        <ellipse cx="180" cy="100" rx="50" ry="16" fill="#4a7a2e" transform="rotate(-30 180 100)" opacity="0.5"/>
+        <ellipse cx="140" cy="140" rx="45" ry="14" fill="#6a9b4a" transform="rotate(-55 140 140)" opacity="0.4"/>
+        <ellipse cx="120" cy="40" rx="18" ry="50" fill="#fff" transform="rotate(-20 120 40)" opacity="0.5"/>
+        <ellipse cx="125" cy="42" rx="3" ry="22" fill="#d4c44a" transform="rotate(-20 125 42)" opacity="0.4"/>
+        <ellipse cx="190" cy="170" rx="40" ry="13" fill="#4a7a2e" transform="rotate(-25 190 170)" opacity="0.35"/>
+        <ellipse cx="160" cy="200" rx="50" ry="15" fill="#6a9b4a" transform="rotate(-40 160 200)" opacity="0.3"/>
+      </svg>
+      <svg class="lily-bottom-left" viewBox="0 0 250 300" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="180" cy="70" rx="60" ry="20" fill="#6a9b4a" transform="rotate(-40 180 70)" opacity="0.5"/>
+        <ellipse cx="150" cy="120" rx="55" ry="18" fill="#4a7a2e" transform="rotate(-50 150 120)" opacity="0.45"/>
+        <ellipse cx="200" cy="150" rx="45" ry="15" fill="#6a9b4a" transform="rotate(-30 200 150)" opacity="0.4"/>
+        <ellipse cx="130" cy="50" rx="20" ry="55" fill="#fff" transform="rotate(-25 130 50)" opacity="0.4"/>
+        <ellipse cx="135" cy="52" rx="3.5" ry="25" fill="#d4c44a" transform="rotate(-25 135 52)" opacity="0.35"/>
+        <ellipse cx="170" cy="200" rx="50" ry="16" fill="#4a7a2e" transform="rotate(-45 170 200)" opacity="0.3"/>
+      </svg>
+      <svg class="leaf-accent-tl" viewBox="0 0 120 180" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="80" cy="50" rx="40" ry="14" fill="#6a9b4a" transform="rotate(-60 80 50)" opacity="0.5"/>
+        <ellipse cx="60" cy="100" rx="35" ry="12" fill="#4a7a2e" transform="rotate(-45 60 100)" opacity="0.4"/>
+        <ellipse cx="70" cy="140" rx="30" ry="10" fill="#6a9b4a" transform="rotate(-55 70 140)" opacity="0.35"/>
+      </svg>
+
+      <div class="inv-content">
+        <div class="assalam">Assalamu'alaikum Wr. Wb.</div>
+        <div class="opening-verse">Maha suci Allah yang telah menciptakan<br>mahluk-Nya berpasang-pasangan.</div>
+
+        <div class="kepada-section">
+          <div class="kepada-lbl">Kepada Yth.</div>
+          <div class="inv-guest-name" id="inv-display-name">—</div>
+          <div class="bridge-text">Mengundang Anda untuk hadir di acara pernikahan</div>
+        </div>
+
+        <div class="divider-gold"><div class="divider-gold-line"></div><div class="divider-gold-dot"></div><div class="divider-gold-line"></div></div>
+
+        <div class="groom-name">Muhammad Caessar Adhari</div>
+        <div class="groom-parents">Putra dari (Alm) Bapak Agus Sujana &amp; Ibu Salis Setiawati</div>
+        <div class="couple-and">&amp;</div>
+        <div class="bride-name">Tri Novitasari</div>
+        <div class="bride-parents">Putri dari (Alm) Bapak Nursinggih &amp; Ibu Tarwiyah</div>
+
+        <div class="divider-gold"><div class="divider-gold-line"></div><div class="divider-gold-dot"></div><div class="divider-gold-line"></div></div>
+
+        <div class="event-label">Akad Nikah</div>
+        <div class="event-divider"></div>
+        <div class="event-date">MINGGU, 05 JULI 2026</div>
+        <div class="event-time">09.00 s/d 11.00 WIB</div><br>
+        <div class="event-venue">Great Mosque of An-Nur Kota Mungkid</div>
+        <div class="event-venue-sub">Magelang, Jawa Tengah</div>
+        <a class="maps-link" href="https://maps.google.com/?q=Masjid+Agung+An-Nur+Kota+Mungkid+Magelang" target="_blank" rel="noopener">&#128205; Buka di Google Maps</a>
+        <div class="event-divider-bottom"></div>
+
+        <div class="quran-box">
+          <div class="quran-text">"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan-pasangan dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir."</div>
+          <div class="quran-ref">QS. Ar-Ruum : 21</div>
+        </div>
+
+        <div class="rsvp-section">
+          <div class="rsvp-lbl">Konfirmasi Kehadiran</div>
+          <div class="rsvp-btns" id="rsvp-btns">
+            <button class="btn-hadir" onclick="doRSVP('hadir')">Hadir</button>
+            <button class="btn-tidak" onclick="doRSVP('tidak')">Belum Bisa Hadir</button>
+          </div>
+          <div class="rsvp-done" id="rsvp-done"></div>
+        </div>
+
+        <div class="closing">Atas kehadiran dan do'a restu Bapak/Ibu/Saudara/i<br>kami ucapkan terima kasih.<div class="closing-salam">Wassalamu'alaikum Wr. Wb.</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════ GENERATOR VIEW ══════ -->
+<div id="view-generator" style="display:none;">
+  <div class="gen-wrap">
+    <div class="gen-header">
+      <h1>Caessar & Novita</h1>
+      <p>Generator Link Undangan — Minggu, 5 Juli 2026</p>
+    </div>
+
+    <div class="gen-panel">
+      <div class="gen-panel-title">&#9670; Base URL</div>
+      <div class="gen-base-row">
+        <label>URL tempat file ini dihosting</label>
+        <input type="text" id="base-url-input" placeholder="https://caessaradhari.github.io/Undangan-Pernikahan/" oninput="renderLinks()"/>
+        <div class="gen-hint">URL otomatis terisi dari alamat halaman ini. Ubah jika perlu.</div>
+      </div>
+    </div>
+
+    <div class="gen-panel">
+      <div class="gen-panel-title">&#9670; Tambah Tamu &amp; Generate Link</div>
+      <div class="add-row">
+        <input type="text" id="name-input" placeholder="Contoh: Bapak Andi Susanto" onkeydown="if(event.key==='Enter')addGuest()"/>
+        <button class="btn-primary" onclick="addGuest()">+ Tambah</button>
+      </div>
+      <div class="link-list" id="link-list">
+        <div class="empty-state" id="empty-state">Belum ada tamu. Tambahkan nama di atas untuk mulai membuat link undangan.</div>
+      </div>
+    </div>
+
+    <div class="gen-footer">Cara pakai: tambahkan nama tamu, lalu salin link atau langsung kirim via WhatsApp.<br>Setiap tamu akan melihat undangan dengan namanya yang sudah tertera.</div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+var EMAIL='adharicaessar@gmail.com';
+var guests=[];
+
+function init(){
+  var params=new URLSearchParams(window.location.search);
+  var toParam=params.get('to');
+  if(toParam&&toParam.trim()){showInvitation(toParam.trim());}
+  else{showGenerator();}
+}
+
+function showInvitation(name){
+  document.getElementById('view-invitation').style.display='block';
+  document.getElementById('view-generator').style.display='none';
+  document.getElementById('inv-display-name').textContent=name;
+  document.title='Undangan Pernikahan \u2013 '+name;
+}
+
+function doRSVP(choice){
+  var name=document.getElementById('inv-display-name').textContent;
+  var subject=encodeURIComponent('Konfirmasi RSVP \u2013 Pernikahan Caessar & Novita');
+  var choiceText=choice==='hadir'?'Hadir':'Belum Bisa Hadir';
+  var body=encodeURIComponent("Assalamu'alaikum,\n\nSaya "+name+" menyatakan: "+choiceText+"\nuntuk acara pernikahan Muhammad Caessar Adhari & Tri Novitasari\nMinggu, 5 Juli 2026 \u2013 Masjid Agung An-Nuur, Kota Mungkid, Magelang.\n\nWassalamu'alaikum.");
+  window.location.href='mailto:'+EMAIL+'?subject='+subject+'&body='+body;
+  document.getElementById('rsvp-btns').style.display='none';
+  var done=document.getElementById('rsvp-done');
+  done.textContent=choice==='hadir'?'Jazakallahu khairan. Kami sangat bahagia dan menantikan kehadiran Bapak/Ibu \uD83E\uDD0D':'Terima kasih telah memberi tahu kami. Doa dan restu Bapak/Ibu sangat berarti bagi kami \uD83E\uDD0D';
+  done.style.display='block';
+}
+
+function showGenerator(){
+  document.getElementById('view-invitation').style.display='none';
+  document.getElementById('view-generator').style.display='block';
+  var loc=window.location;
+  var autoUrl=(loc.origin+loc.pathname).split('?')[0];
+  var inp=document.getElementById('base-url-input');
+  if(inp&&!inp.value.trim()&&autoUrl.indexOf('file://')===-1){inp.value=autoUrl;}
+  loadGuests();
+  renderLinks();
+}
+
+function getBaseUrl(){
+  var inp=document.getElementById('base-url-input');
+  var val=inp?inp.value.trim():'';
+  if(!val){var loc=window.location;val=loc.origin+loc.pathname;}
+  return val.split('?')[0];
+}
+
+function buildLink(name){return getBaseUrl()+'?to='+encodeURIComponent(name);}
+
+function addGuest(){
+  var inp=document.getElementById('name-input');
+  var name=inp.value.trim();
+  if(!name){inp.focus();return;}
+  if(guests.indexOf(name)!==-1){showToast('Nama ini sudah ada di daftar.');inp.focus();return;}
+  guests.push(name);inp.value='';inp.focus();
+  saveGuests();renderLinks();
+}
+
+function removeGuest(i){guests.splice(i,1);saveGuests();renderLinks();}
+
+function renderLinks(){
+  var list=document.getElementById('link-list');
+  var empty=document.getElementById('empty-state');
+  if(guests.length===0){list.innerHTML='';list.appendChild(empty);empty.style.display='block';return;}
+  empty.style.display='none';list.innerHTML='';
+  guests.forEach(function(name,i){
+    var link=buildLink(name);
+    var waMsg=encodeURIComponent("Assalamu'alaikum, "+name+".\n\nDengan penuh kebahagiaan, kami mengundang Bapak/Ibu/Saudara/i untuk hadir di pernikahan kami:\n\n"+link+"\n\nMohon doa restu. Terima kasih.\n\nWassalamu'alaikum,\nCaessar & Novita");
+    var row=document.createElement('div');row.className='link-row';
+    row.innerHTML='<span class="link-num">'+(i+1)+'</span><span class="link-name">'+escHtml(name)+'</span><button class="btn-copy" onclick="copyLink('+i+',this)">Salin Link</button><a class="btn-wa" href="https://wa.me/?text='+waMsg+'" target="_blank" rel="noopener">WA</a><button class="btn-del" onclick="removeGuest('+i+')" title="Hapus">&#10005;</button>';
+    list.appendChild(row);
+  });
+}
+
+function copyLink(i,btn){
+  var link=buildLink(guests[i]);
+  if(navigator.clipboard){navigator.clipboard.writeText(link).then(function(){btn.textContent='Tersalin!';btn.classList.add('copied');showToast('Link untuk '+guests[i]+' disalin.');setTimeout(function(){btn.textContent='Salin Link';btn.classList.remove('copied');},2000);});}
+  else{var ta=document.createElement('textarea');ta.value=link;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);btn.textContent='Tersalin!';btn.classList.add('copied');showToast('Link untuk '+guests[i]+' disalin.');setTimeout(function(){btn.textContent='Salin Link';btn.classList.remove('copied');},2000);}
+}
+
+function showToast(msg){var t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(function(){t.classList.remove('show');},2500);}
+function saveGuests(){try{localStorage.setItem('wedding_guests_cn',JSON.stringify(guests));}catch(e){}}
+function loadGuests(){try{var d=localStorage.getItem('wedding_guests_cn');if(d)guests=JSON.parse(d);}catch(e){guests=[];}}
+function escHtml(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+init();
+</script>
+</body>
+</html>
